@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Propósitos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🎯 Gestor de Propósitos de Año Nuevo 🎉</h1>
+    <form id="goalForm" class="form">
+      <div class="form-group">
+        <label for="goalName">Meta:</label>
+        <input type="text" id="goalName" placeholder="Ejemplo: Leer libros" required>
+      </div>
+      <div class="form-group">
+        <label for="goalQuantity">Cantidad:</label>
+        <input type="number" id="goalQuantity" min="1" placeholder="Ejemplo: 12" required>
+      </div>
+      <div class="form-group">
+        <label for="goalUnit">Unidades:</label>
+        <input type="text" id="goalUnit" placeholder="Ejemplo: libros" required>
+      </div>
+      <div class="form-group">
+        <label for="goalDeadline">Plazo (meses):</label>
+        <input type="number" id="goalDeadline" min="1" max="12" placeholder="Máximo: 12" required>
+      </div>
+      <button type="button" id="addGoalButton" class="btn">➕ Añadir Objetivo</button>
+    </form>
+
+    <div id="goalsList" class="goals-list"></div>
+
+    <button type="button" id="generatePlanButton" class="btn btn-primary">📅 Calcular Plan</button>
+    <button type="button" id="exportPlanButton" class="btn btn-secondary">💾 Exportar a .txt</button>
+
+    <pre id="detailedPlan" class="detailed-plan"></pre>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
