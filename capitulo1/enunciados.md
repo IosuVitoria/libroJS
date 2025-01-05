@@ -54,23 +54,13 @@
 34. Diseña una sección <section> que contenga un subtítulo y un párrafo.
 35. Crea una página con un pie de página <footer> que contenga información de copyright.
 
-**Multimedia**
-
-36. Inserta un video en tu página usando la etiqueta <video>.
-37. Agrega un archivo de audio usando la etiqueta <audio>.
-38. Usa el atributo controls en un video o audio para permitir que el usuario controle la reproducción.
-39. Agrega subtítulos a un video usando la etiqueta <track>.
-40. Crea una página que contenga una galería de imágenes con descripciones debajo de cada imagen.
-
-
-
 
 Variables y constantes
-41. Declara una variable con let para almacenar tu nombre y muéstrala en la consola.
-42. Declara una constante para el valor de PI y úsala en un cálculo de área de un círculo.
-43. Cambia el valor de una variable declarada con var y observa el resultado.
-44. Declara una variable con let, asígnale un valor y luego cámbialo. Imprime ambos valores.
-45. Intenta reasignar un valor a una constante y observa qué sucede.
+36. Declara una variable con let para almacenar tu nombre y muéstrala en la consola.
+37. Declara una constante para el valor de PI y úsala en un cálculo de área de un círculo.
+38. Cambia el valor de una variable declarada con var y observa el resultado.
+39. Declara una variable con let, asígnale un valor y luego cámbialo. Imprime ambos valores.
+40. Intenta reasignar un valor a una constante y observa qué sucede.
 
 Tipos de datos primitivos
 Declara una variable para almacenar un string y concaténala con otro string.

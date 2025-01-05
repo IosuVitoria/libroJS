@@ -1,0 +1,100 @@
+<!-- 31. Reemplaza un <div> con un elemento semántico como <header>, <main>, o <footer>.
+    32. Crea una página con un encabezado <header> que incluya un logotipo y un menú de navegación.
+    33. Agrega un artículo <article> con un título y contenido descriptivo.
+    34. Diseña una sección <section> que contenga un subtítulo y un párrafo.
+    35. Crea una página con un pie de página <footer> que contenga información de copyright. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódico Digital</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+            }
+        
+            header {
+                background-color: #333;
+                color: white;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        
+            header nav a {
+                color: white;
+                margin-left: 15px;
+                text-decoration: none;
+            }
+        
+            header nav a:hover {
+                text-decoration: underline;
+            }
+        
+            main {
+                padding: 20px;
+            }
+        
+            article {
+                border-bottom: 1px solid #ddd;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+        
+            section {
+                margin: 20px 0;
+            }
+        
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+        
+            .logo {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Ejercicio 31-32: Encabezado con logotipo y menú de navegación -->
+        <header>
+            <div class="logo">Mi Periódico</div>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#news">Noticias</a>
+                    <a href="#contact">Contacto</a>
+                </nav>
+        </header>
+        
+        <main>
+            <!-- Ejercicio 33: Artículo con título y contenido descriptivo -->
+            <article>
+                <h1>El Impacto de la Tecnología en la Sociedad</h1>
+                <p>La tecnología ha transformado la forma en que vivimos, trabajamos y nos comunicamos. Desde los teléfonos inteligentes hasta las redes sociales, cada aspecto de nuestra vida se ha visto afectado de manera profunda.</p>
+            </article>
+        
+                <!-- Ejercicio 34: Sección con subtítulo y párrafo -->
+            <section>
+                <h2>Avances en Inteligencia Artificial</h2>
+                <p>La inteligencia artificial continúa avanzando a pasos agigantados, impactando industrias como la medicina, la educación y el transporte.</p>
+            </section>
+        </main>
+        
+        <!-- Ejercicio 35: Pie de página con información de copyright -->
+        <footer>
+            <p>&copy; 2025 Mi Ejercicio HTML. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>

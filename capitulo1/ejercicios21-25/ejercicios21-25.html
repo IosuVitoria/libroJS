@@ -1,0 +1,70 @@
+<!-- 21. Crea un formulario con un campo de entrada de texto usando <input type="text">.
+22. Agrega un botón de envío a tu formulario usando <button> o <input type="submit">.
+23. Crea un formulario con un campo de contraseña usando <input type="password">.
+24. Diseña un formulario que incluya un campo de selección de fecha usando <input type="date">.
+25. Agrega un área de texto grande a tu formulario usando <textarea>. -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicios 21 a 25</title>
+        <style>
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 20px;
+                max-width: 400px;
+                margin: auto;
+                border: 1px solid black;
+            }
+    
+            label {
+                font-weight: bold;
+            }
+    
+            input, textarea, button {
+                padding: 10px;
+                font-size: 16px;
+            }
+    
+            button {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+    
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Formulario combinado con los ejercicios 21 a 25 -->
+        <form action="Submit">
+            <!-- Ejercicio 21: Campo de entrada de texto -->
+            <label for="text">Nombre:</label>
+            <input type="text" id="text" name="text">
+    
+            <!-- Ejercicio 22: Botón de envío -->
+            <button type="submit">Enviar</button>
+    
+            <!-- Ejercicio 23: Campo de contraseña -->
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+    
+            <!-- Ejercicio 24: Campo de selección de fecha -->
+            <label for="date">Fecha de nacimiento:</label>
+            <input type="date" id="date" name="date">
+    
+            <!-- Ejercicio 25: Área de texto grande -->
+            <label for="textarea">Comentarios:</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+        </form>
+    </body>
+    </html>
+    

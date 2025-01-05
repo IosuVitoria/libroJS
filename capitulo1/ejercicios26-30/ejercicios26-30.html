@@ -1,0 +1,71 @@
+<!-- 26. Usa el atributo id para identificar un párrafo específico y enlázalo desde otro lugar de la página.
+27. Agrega una clase a un grupo de elementos y comenta cómo se podrían estilizar con CSS.
+28. Usa el atributo title para mostrar información adicional al pasar el ratón sobre un elemento.
+29. Usa lang en el elemento <html> para indicar el idioma principal de la página.
+30. Usa tabindex para controlar el orden de navegación por teclado en varios elementos. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios 21 a 30</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Ejercicio 27: Ejemplo de estilo para la clase "highlight" */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ejercicio 26: Enlace a un párrafo con id -->
+    <p id="specific-paragraph">Este es un párrafo específico identificado con un id.</p>
+    <a href="#specific-paragraph">Ir al párrafo específico</a>
+
+    <!-- Ejercicio 27: Elementos con clase "highlight" -->
+    <p class="highlight">Este párrafo tiene la clase "highlight".</p>
+    <p class="highlight">Otro párrafo destacado con la misma clase.</p>
+    <p>Este párrafo no tiene la clase "highlight".</p>
+
+    <!-- Ejercicio 28: Atributo title -->
+    <p title="Información adicional al pasar el ratón">Pasa el ratón por encima de este texto para ver el título.</p>
+
+    <!-- Ejercicio 29: Idioma principal indicado en el elemento html -->
+
+    <!-- Ejercicio 30: Control del orden de navegación con tabindex -->
+    <p tabindex="3">Este párrafo es el tercero en el orden de navegación.</p>
+    <p tabindex="1">Este párrafo es el primero en el orden de navegación.</p>
+    <p tabindex="2">Este párrafo es el segundo en el orden de navegación.</p>
+</body>
+</html>
