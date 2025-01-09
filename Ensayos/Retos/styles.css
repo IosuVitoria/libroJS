@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #333;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), #000;
+    background-size: cover;
+    transition: background 0.5s ease;
+}
+  
+.container {
+    text-align: center;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+}
+  
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+  
+.neumorphic {
+    background: #e0e5ec;
+    box-shadow: 7px 7px 15px #b8b9be, -7px -7px 15px #ffffff;
+    border-radius: 20px;
+}
+  
+.timer {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+  
+.neumorphic-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #e0e5ec;
+    color: #555;
+    font-size: 1rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #b8b9be, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+  
+.neumorphic-btn:active {
+    transform: translateY(2px);
+    box-shadow: inset 5px 5px 10px #b8b9be, inset -5px -5px 10px #ffffff;
+}
+  
+.status-text {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #fff;
+}
+  
