@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f9;
+    }
+
+    .calculadora {
+      background-color: #747171;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 320px;
+    }
+
+    .pantalla {
+      width: 90%;
+      height: 60px;
+      margin-bottom: 20px;
+      text-align: right;
+      font-size: 1.8em;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      background-color: #f9f9f9;
+    }
+
+    .botones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: space-between;
+    }
+
+    .boton {
+      flex: 1 0 22%;
+      padding: 15px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 35px;
+      background-color: #1a2938;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .boton:hover {
+      background-color: #8aa8c9;
+    }
+
+    .boton--operaciones,
+    .boton--destacado {
+      border: 2px solid white;
+      background-color: #eba818;
+    }
+
+    .boton--operaciones:hover,
+    .boton--destacado:hover {
+      border: 2px solid rgb(165, 80, 0);
+      background-color: #af7a08;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculadora">
+    <input type="text" class="pantalla" id="pantalla" disabled>
+    <div class="botones">
+      <button class="boton boton--operaciones" onclick="limpiarPantalla()">C</button>
+      <button class="boton boton--operaciones" onclick="borrar()">←</button>
+      <button class="boton boton--operaciones" onclick="agregarSimbolo('%')">%</button>
+      <button class="boton boton--operaciones" onclick="agregarSimbolo('/')">/</button>
+
+      <button class="boton" onclick="agregarSimbolo('7')">7</button>
+      <button class="boton" onclick="agregarSimbolo('8')">8</button>
+      <button class="boton" onclick="agregarSimbolo('9')">9</button>
+      <button class="boton boton--operaciones" onclick="agregarSimbolo('*')">*</button>
+
+      <button class="boton" onclick="agregarSimbolo('4')">4</button>
+      <button class="boton" onclick="agregarSimbolo('5')">5</button>
+      <button class="boton" onclick="agregarSimbolo('6')">6</button>
+      <button class="boton boton--operaciones" onclick="agregarSimbolo('-')">-</button>
+
+      <button class="boton" onclick="agregarSimbolo('1')">1</button>
+      <button class="boton" onclick="agregarSimbolo('2')">2</button>
+      <button class="boton" onclick="agregarSimbolo('3')">3</button>
+      <button class="boton boton--operaciones" onclick="agregarSimbolo('+')">+</button>
+
+      <button class="boton" style="flex: 1 0 48%;" onclick="agregarSimbolo('0')">0</button>
+      <button class="boton" style="flex: 1 0 22%;" onclick="agregarSimbolo('.')">.</button>
+      <button class="boton boton--destacado" style="flex: 1 0 22%;" onclick="calcularResultado()">=</button>
+    </div>
+  </div>
+
+  <script>
+    const pantalla = document.getElementById('pantalla');
+
+    function agregarSimbolo(simbolo) {
+      pantalla.value += simbolo;
+    }
+
+    function limpiarPantalla() {
+      pantalla.value = '';
+    }
+
+    function borrar() {
+      pantalla.value = pantalla.value.slice(0, -1);
+    }
+
+    function calcularResultado() {
+      try {
+        pantalla.value = eval(pantalla.value);
+      } catch {
+        pantalla.value = 'Error';
+      }
+    }
+  </script>
+</body>
+</html>
