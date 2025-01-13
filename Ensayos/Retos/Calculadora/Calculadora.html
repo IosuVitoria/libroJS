@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./calculadora.jpg" type="image/x-icon">
   <title>Calculadora</title>
   <style>
     body {
@@ -105,19 +106,19 @@
   <script>
     const pantalla = document.getElementById('pantalla');
 
-    function agregarSimbolo(simbolo) {
+    const agregarSimbolo = (simbolo) => {
       pantalla.value += simbolo;
     }
 
-    function limpiarPantalla() {
+    const limpiarPantalla = () => {
       pantalla.value = '';
     }
 
-    function borrar() {
+    const borrar = () => {
       pantalla.value = pantalla.value.slice(0, -1);
     }
 
-    function calcularResultado() {
+    const calcularResultado = () => {
       try {
         pantalla.value = eval(pantalla.value);
       } catch {
