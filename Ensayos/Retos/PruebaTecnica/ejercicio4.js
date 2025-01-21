@@ -6,19 +6,20 @@
 // Cada subcuadrícula de 3x3 debe contener números del 1 al 9 sin repetirse.
 
 const validarSudoku = (tablero) => {
-
+    
     const esValido = (numeros) => {
-        const filtrados = numeros.filter(n => n !== 0);
-        const conjunto = new Set(filtrados); 
-        return filtrados.length === conjunto.size; 
+        const conjunto = new Set(numeros);
+        return conjunto.size === 9 && !conjunto.has(0); 
     };
 
+ 
     for (let fila of tablero) {
         if (!esValido(fila)) {
             return false;
         }
     }
 
+ 
     for (let col = 0; col < 9; col++) {
         const columna = [];
         for (let fila = 0; fila < 9; fila++) {
@@ -29,6 +30,7 @@ const validarSudoku = (tablero) => {
         }
     }
 
+    
     for (let filaInicio = 0; filaInicio < 9; filaInicio += 3) {
         for (let colInicio = 0; colInicio < 9; colInicio += 3) {
             const bloque = [];
@@ -43,10 +45,11 @@ const validarSudoku = (tablero) => {
         }
     }
 
+   
     return true;
 };
 
-// Ejemplo de uso
+
 const tablero = [
     [5, 3, 0, 0, 7, 0, 0, 0, 0],
     [6, 0, 0, 1, 9, 5, 0, 0, 0],
@@ -61,6 +64,7 @@ const tablero = [
 
 console.log(validarSudoku(tablero)); 
 
+
 const tableroValido = [
     [5, 3, 4, 6, 7, 8, 9, 1, 2],
     [6, 7, 2, 1, 9, 5, 3, 4, 8],
@@ -72,4 +76,5 @@ const tableroValido = [
     [2, 8, 7, 4, 1, 9, 6, 3, 5],
     [3, 4, 5, 2, 8, 6, 1, 7, 9]
 ];
-console.log(validarSudoku(tableroValido));
+
+console.log(validarSudoku(tableroValido)); // true
