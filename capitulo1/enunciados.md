@@ -55,57 +55,79 @@
 35. Crea una página con un pie de página <footer> que contenga información de copyright.
 
 
-Variables y constantes
+**Variables y constantes**
+
 36. Declara una variable con let para almacenar tu nombre y muéstrala en la consola.
 37. Declara una constante para el valor de PI y úsala en un cálculo de área de un círculo.
 38. Cambia el valor de una variable declarada con var y observa el resultado.
 39. Declara una variable con let, asígnale un valor y luego cámbialo. Imprime ambos valores.
 40. Intenta reasignar un valor a una constante y observa qué sucede.
 
-Tipos de datos primitivos
-Declara una variable para almacenar un string y concaténala con otro string.
-Escribe un programa que determine el tipo de dato de diferentes valores usando typeof.
-Declara una variable con un valor null y otra con undefined. Imprime ambas en la consola.
-Convierte un número a string y viceversa. Verifica los resultados usando typeof.
-Usa un BigInt para realizar una operación con números muy grandes.
+**Tipos de datos primitivos**
+
+41. Declara una variable para almacenar un string y concaténala con otro string.
+42. Declara diferentes variables y averigua el tipo de dato de diferentes valores usando typeof.
+43. Declara una variable con un valor null y otra con undefined. Imprime ambas en la consola.
+44. Convierte un número a string y viceversa. Verifica los resultados usando typeof.
+45. Usa un BigInt para realizar una operación con números muy grandes.
+
+**Trabajando con datos primitivos**
+
+46. Declara una variable numérica y convierte su valor en un número binario, luego imprime el binario como string.
+47. Declara una variable con un número decimal y utiliza Math.floor, Math.ceil y Math.round para mostrar sus diferentes aproximaciones.
+48. Usa una plantilla de cadena (template string) para incluir varias variables en una sola salida.
+49. Declara una variable de tipo undefined y asigna un valor posteriormente. Imprime ambos estados de la variable.
+50. Declara un string, conviértelo a mayúsculas y minúsculas, y verifica su longitud.
 
 
-Operadores
-Suma dos números y muestra el resultado en la consola.
-Compara si dos números son iguales usando === y ==. Explica la diferencia.
-Escribe un programa que determine si un número es mayor que otro usando operadores de comparación.
-Utiliza operadores lógicos para combinar condiciones. Ejemplo: edad > 18 && esEstudiante.
-Usa el operador ternario para determinar si un número es positivo, negativo o cero.
-Declaraciones
-Escribe un programa que pida al usuario su edad y determine si es mayor de edad.
-Crea un menú que, usando switch, imprima un mensaje dependiendo del número que ingrese el usuario.
-Escribe un programa que use if-else para determinar si un número es par o impar.
-Usa una cadena de if-else if para clasificar a un estudiante según su puntaje (A, B, C, etc.).
-Combina if y operadores lógicos para determinar si un año es bisiesto.
-Ciclos
-Escribe un programa que imprima los números del 1 al 10 usando un for.
-Usa un while para sumar los números del 1 al 100.
-Escribe un programa que imprima los números pares entre 1 y 50 usando un do-while.
-Crea un objeto y usa un for-in para recorrer todas sus propiedades.
-Declara un array y usa un for-of para recorrerlo e imprimir cada elemento.
-Funciones
-Declara una función que imprima un saludo en la consola.
-Escribe una función que reciba un número y devuelva su cuadrado.
-Usa una función anónima como callback para iterar sobre un array.
-Crea una arrow function que reciba dos números y devuelva su suma.
-Define una función con un parámetro por defecto y prueba llamarla sin pasarle ese parámetro.
-Parámetros por defecto y Rest
-Escribe una función que reciba un nombre y lo salude. Si no se pasa un nombre, usa "Desconocido".
-Crea una función que sume un número arbitrario de valores usando ...rest.
-Usa rest para combinar argumentos en un array dentro de una función.
-Define una función con múltiples parámetros por defecto.
-Escribe una función que acepte una lista de números y devuelva el mayor de ellos.
+**Operadores**
+
+51. Suma dos números y muestra el resultado en la consola.
+52. Compara si dos números son iguales usando === y ==. Explica la diferencia.
+53. Escribe un programa que determine si un número es mayor que otro usando operadores de comparación.
+54. Utiliza operadores lógicos para combinar condiciones. Ejemplo: edad > 18 && esEstudiante.
+55. Usa el operador ternario para determinar si un número es positivo, negativo o cero.
+
+**Declaraciones**
+
+56. Escribe un programa que pida al usuario su edad y determine si es mayor de edad.
+57. Crea un menú que, usando switch, imprima un mensaje dependiendo del número que ingrese el usuario.
+58. Escribe un programa que use if-else para determinar si un número es par o impar.
+59. Usa una cadena de if-else if para clasificar a un estudiante según su puntaje (A, B, C, etc.).
+60. Combina if y operadores lógicos para determinar si un año es bisiesto.
+
+
+**Ciclos**
+
+61. Escribe un programa que imprima los números del 1 al 10 usando un for.
+62. Usa un while para sumar los números del 1 al 100.
+63. Escribe un programa que imprima los números pares entre 1 y 50 usando un do-while.
+64. Crea un objeto y usa un for-in para recorrer todas sus propiedades.
+65. Declara un array y usa un for-of para recorrerlo e imprimir cada elemento.
+
+**Funciones**
+
+66. Declara una función que imprima un saludo en la consola.
+67. Escribe una función que reciba un número y devuelva su cuadrado.
+68. Usa una función anónima como callback para iterar sobre un array.
+69. Crea una arrow function que reciba dos números y devuelva su suma.
+70. Define una función con un parámetro por defecto y prueba llamarla sin pasarle ese parámetro.
+
+**Parámetros por defecto y Rest**
+
+71. Escribe una función que reciba un nombre y lo salude. Si no se pasa un nombre, usa "Desconocido".
+72. Crea una función que sume un número arbitrario de valores usando ...rest.
+73. Usa rest para combinar argumentos en un array dentro de una función.
+74. Define una función con múltiples parámetros por defecto.
+75. Escribe una función que acepte una lista de números y devuelva el mayor de ellos.
+
 Closures
 Crea una función que devuelva otra función que imprima un mensaje.
 Escribe un contador que use closures para incrementar y mostrar un valor.
 Usa un closure para mantener un estado privado dentro de una función.
 Crea un closure que calcule el cuadrado de un número.
 Implementa una función que genere saludos personalizados usando closures.
+
 Ejercicios Combinados
 Crea un programa que utilice if, switch, y operadores para clasificar un número como positivo, negativo o cero.
 Escribe un programa que calcule el promedio de un array de números usando un ciclo for.
