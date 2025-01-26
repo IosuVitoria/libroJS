@@ -121,50 +121,62 @@
 74. Define una función con múltiples parámetros por defecto.
 75. Escribe una función que acepte una lista de números y devuelva el mayor de ellos.
 
-Closures
-Crea una función que devuelva otra función que imprima un mensaje.
-Escribe un contador que use closures para incrementar y mostrar un valor.
-Usa un closure para mantener un estado privado dentro de una función.
-Crea un closure que calcule el cuadrado de un número.
-Implementa una función que genere saludos personalizados usando closures.
+**Closures**
 
-Ejercicios Combinados
-Crea un programa que utilice if, switch, y operadores para clasificar un número como positivo, negativo o cero.
-Escribe un programa que calcule el promedio de un array de números usando un ciclo for.
-Usa una función para determinar si un número es primo.
-Combina un for-in con un if para contar las propiedades de un objeto que cumplen cierta condición.
-Escribe un programa que genere un patrón como una pirámide usando ciclos.
-Proyectos Pequeños
-Crea una calculadora básica que realice operaciones de suma, resta, multiplicación y división.
-Escribe un programa que cuente cuántas vocales tiene una cadena.
-Implementa un contador que aumente y disminuya al hacer clic en botones.
-Haz una página con un botón que cambie el color de fondo al azar al hacer clic.
-Crea un juego de adivinar un número entre 1 y 100.
-Retos Avanzados
-Escribe un programa que invierta una cadena usando un ciclo.
-Crea un programa que ordene un array de números de menor a mayor.
-Implementa un sistema de autenticación básica usando prompt y if-else.
-Usa closures para crear una función que permita registrar eventos.
-Haz una página que permita al usuario ingresar un texto y lo muestre en tiempo real.
-Ejercicios adicionales por sección
-Variables y constantes
-Declara variables para almacenar un nombre, edad y ciudad. Combínalos en un mensaje completo.
-Cambia el valor de una variable declarada con let y muestra ambos valores.
-Prueba declarar una variable sin let, const o var. Observa el resultado.
-Operadores
-Calcula el resto de dividir 15 entre 4.
-Escribe un programa que determine si dos números son múltiplos entre sí.
-Condicionales
-Crea un programa que imprima "fizz" si un número es múltiplo de 3, "buzz" si es múltiplo de 5, y "fizzbuzz" si es múltiplo de ambos.
-Usa switch para clasificar los días de la semana como "laborales" o "fin de semana".
-Ciclos
-Genera una tabla de multiplicar del 1 al 10.
-Usa un ciclo for para imprimir una lista de nombres de un array.
-Funciones
-Define una función que devuelva el menor de tres números.
-Crea una función que acepte un array y devuelva su longitud.
-Proyectos Finales
-Calculadora Compleja: Crea una calculadora con botones HTML que ejecute operaciones con eventos onclick.
-Juego de Piedra, Papel o Tijeras: Usa funciones y ciclos para jugar contra la computadora.
-Conversor de Moneda: Crea un programa que convierta entre diferentes divisas.
-Generador de Contraseñas: Implementa una función que genere contraseñas aleatorias con ciertas restricciones.
+76. Crea una función que devuelva otra función que imprima un mensaje.
+77. Escribe un contador que use closures para incrementar y mostrar un valor.
+78. Usa un closure para mantener un estado privado dentro de una función.
+79. Crea un closure que calcule el cuadrado de un número.
+80. Implementa una función que genere saludos personalizados usando closures.
+
+
+**Proyectos Pequeños**
+
+81. Crea una calculadora básica que realice operaciones de suma, resta, multiplicación y división.
+82. Escribe un programa que cuente cuántas vocales tiene una cadena.
+83. Implementa un contador que aumente y disminuya al hacer clic en botones.
+84. Haz una página con un botón que cambie el color de fondo al azar al hacer clic.
+85. Crea un juego de adivinar un número entre 1 y 100.
+
+**Retos Avanzados**
+
+86. Escribe un programa que invierta una cadena usando un ciclo.
+87. Crea un programa que ordene un array de números de menor a mayor.
+88. Implementa un sistema de autenticación básica usando prompt y if-else.
+89. Usa closures para crear una función que permita registrar eventos.
+90. Haz una página que permita al usuario ingresar un texto y lo muestre en tiempo real.
+
+**Ejercicios adicionales por sección**
+
+*Variables y constantes*
+
+a) Declara variables para almacenar un nombre, edad y ciudad. Combínalos en un mensaje completo.
+b) Cambia el valor de una variable declarada con let y muestra ambos valores.
+c) Prueba declarar una variable sin let, const o var. Observa el resultado.
+
+*Operadores*
+
+d) Calcula el resto de dividir 15 entre 4.
+e) Escribe un programa que determine si dos números son múltiplos entre sí.
+
+*Condicionales*
+
+f) Crea un programa que imprima "fizz" si un número es múltiplo de 3, "buzz" si es múltiplo de 5, y "fizzbuzz" si es múltiplo de ambos.
+g) Usa switch para clasificar los días de la semana como "laborales" o "fin de semana".
+
+*Ciclos*
+
+h) Genera una tabla de multiplicar del 1 al 10.
+i) Usa un ciclo for para imprimir una lista de nombres de un array.
+
+*Funciones*
+
+j) Define una función que devuelva el menor de tres números.
+K) Crea una función que acepte un array y devuelva su longitud.
+
+*Proyectos Finales*
+
+l) Calculadora Compleja: Crea una calculadora con botones HTML que ejecute operaciones con eventos onclick.
+m) Juego de Piedra, Papel o Tijeras: Usa funciones y ciclos para jugar contra la computadora.
+n) Conversor de Moneda: Crea un programa que convierta entre diferentes divisas.
+o) Generador de Contraseñas: Implementa una función que genere contraseñas aleatorias con ciertas restricciones.
