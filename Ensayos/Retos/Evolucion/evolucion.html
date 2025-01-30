@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Selección Natural</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <script src="./js/evolucion.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Simulador de Selección Natural</h1>
+        <p>Explora cómo evoluciona la frecuencia de los alelos en una población a través de la selección natural.</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="info">
+            <h2>¿Cómo funciona este simulador?</h2>
+            <p>Este simulador modela la evolución de la frecuencia del alelo <b>A</b> en una población a lo largo de varias generaciones.  
+            Puedes ajustar los valores de fitness y tamaño de la población para observar su impacto en la selección natural.</p>
+        </section>
+
+        <section class="controles">
+            <h3>Configura tu simulación</h3>
+            <div class="inputs">
+                <label>Fitness de A: <input type="number" id="fitnessA" value="0.9" step="0.01"></label>
+                <label>Fitness de a: <input type="number" id="fitnessa" value="0.8" step="0.01"></label>
+                <label>Tamaño de la población: <input type="number" id="populationSize" value="100"></label>
+                <label>Frecuencia inicial de A: <input type="number" id="initialFreq" value="0.5" step="0.01"></label>
+                <button onclick="startSimulation()">Iniciar Simulación</button>
+            </div>
+        </section>
+
+        <section class="resultados">
+            <h3>Gráfica de Evolución</h3>
+            <canvas id="grafico"></canvas>
+        </section>
+
+        <section class="poblacion-container">
+            <h3>Visualización de la población</h3>
+            <div class="leyenda">
+                <div><span class="color rojo"></span> Alelo A</div>
+                <div><span class="color azul"></span> Alelo a</div>
+            </div>
+            <div class="poblacion" id="vistaPoblacion"></div>
+        </section>
+    </main>
+</body>
+</html>

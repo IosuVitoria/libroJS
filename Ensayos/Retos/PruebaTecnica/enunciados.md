@@ -9,3 +9,4 @@ Ejercicio 4: Escribe una función llamada validarSudoku que reciba un tablero de
 Cada fila debe contener números del 1 al 9 sin repetirse.
 Cada columna debe contener números del 1 al 9 sin repetirse.
 Cada subcuadrícula de 3x3 debe contener números del 1 al 9 sin repetirse.
+
