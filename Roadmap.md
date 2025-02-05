@@ -29,6 +29,7 @@ addEventListener y tipos de eventos (click, keydown, input).
 Delegación de eventos.
 Propagación de eventos (bubbling y capturing).
 preventDefault y stopPropagation.
+
 3. Programación Funcional
 Métodos de Arrays
 Transformación (map, filter, reduce, flatMap).
@@ -40,6 +41,7 @@ Cómo evitar mutaciones directas (uso de slice, concat, spread operator).
 Funciones puras y composición
 Ejemplos prácticos.
 compose y pipe (implementaciones propias o uso de librerías como Ramda).
+
 4. Asincronismo
 Callbacks
 Uso básico y problemas de anidación (callback hell).

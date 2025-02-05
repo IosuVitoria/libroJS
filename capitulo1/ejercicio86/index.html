@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Juego de Memoria 🧠</h1>
+        <div id="game-board" class="game-board"></div>
+        <div id="info">
+            <p>Intentos: <span id="attempts">0</span></p>
+            <p>Tiempo: <span id="timer">00:00</span></p>
+            <p id="victory-message" style="display:none; color: green;">¡Has ganado! 🎉</p>
+            <button id="reset-button">Reiniciar Juego 🔄</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

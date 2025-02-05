@@ -140,11 +140,11 @@
 
 **Retos Avanzados**
 
-86. Escribe un programa que invierta una cadena usando un ciclo.
-87. Crea un programa que ordene un array de números de menor a mayor.
-88. Implementa un sistema de autenticación básica usando prompt y if-else.
-89. Usa closures para crear una función que permita registrar eventos.
-90. Haz una página que permita al usuario ingresar un texto y lo muestre en tiempo real.
+86. Implementa un juego de memoria (Memory Game)
+87. Crea un dashboard de estadísticas con gráficos interactivos
+88. Implementa un editor de texto básico con funcionalidades avanzadas
+89. Crea un simulador de compra de productos con carrito y checkout
+90. Crea una página de preguntas y respuestas (FAQ) interactiva
 
 **Ejercicios adicionales por sección**
 
